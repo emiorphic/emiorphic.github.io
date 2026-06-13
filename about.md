@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Hi! I'm Akira. I'm an undergrad studying pure mathematics. 
+Hi! I'm Emi. I'm an undergrad studying pure mathematics somewhere in Indonesia. 
