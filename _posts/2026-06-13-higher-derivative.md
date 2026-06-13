@@ -20,5 +20,7 @@ In high school, the introduction of what a derivative of a function is usually g
 > f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}.
 > \end{equation}
 > $$
+> 
+> If the limit exists, the function $$f$$ is said to be *differentiable* at $$x$$. 
 
-Intuitively, the derivative of a function at a given point represents the 
+Intuitively, 
