@@ -8,7 +8,7 @@ math: true
 ---
 
 # Notations
-Scalar quantities (elements of $$\mathbb{R}$$) are written normally, whereas vector quantities (elements of $$\mathbb{R}^2$$ and above) are written in upright boldface. Also, matrices are written in Sans-Serif (e.g. $$\mathsf{M}$$)
+Scalar quantities (elements of $$\mathbb{R}$$) are written normally, whereas vector quantities (elements of $$\mathbb{R}^2$$ and above) are written in upright boldface (e.g. $$\vec{x}$$). Also, matrices are written in Sans-Serif (e.g. $$\mathsf{M}$$)
 
 
 # Introductions
