@@ -21,6 +21,6 @@ In high school, the introduction of what a derivative of a function is usually g
 > \end{equation}
 > $$
 > 
-> If the limit exists, the function $$f$$ is said to be *differentiable* at $$x$$. 
+> If for all $$x \in D$$ the limit exists, the function is said to be *differentiable* everywhere on $$D$$.
 
 Intuitively, 
