@@ -46,7 +46,7 @@ Looking back at $$\eqref{eq:simplederiv}$$, we can perform a change of variable:
 $$
 \begin{align}
 f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}\\
-\Longrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}
+\Longrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}.
 \end{align}
 $$
 
@@ -54,7 +54,7 @@ If that equality holds, then the following should also hold:
 
 $$
 \begin{equation}
-\lim_{x \to t} \left(\frac{f(x) - f(t)}{x - t} - f'(t)\right) = 0
+\lim_{x \to t} \left(\frac{f(x) - f(t)}{x - t} - f'(t)\right) = 0.
 \end{equation}
 $$
 
@@ -62,7 +62,7 @@ Now, combine the terms over a common denominator:
 
 $$
 \begin{equation} \label{eq:wow!}
-\lim_{x \to t} \left(\frac{f(x) - [f(t) + f'(t)(x - t)]}{x - t}\right) = 0
+\lim_{x \to t} \left(\frac{f(x) - [f(t) + f'(t)(x - t)]}{x - t}\right) = 0.
 \end{equation}
 $$
 
@@ -76,7 +76,7 @@ represents the line tangent to the curve $$y = f(x)$$ at $$x = t$$. When plotted
 
 $$
 \begin{equation} \label{eq:WOW!}
-\lim_{x \to t} \frac{E(x)}{x - t} = 0
+\lim_{x \to t} \frac{E(x)}{x - t} = 0.
 \end{equation}
 $$
 
@@ -86,4 +86,11 @@ $$
 o(g(x)) \coloneqq \left\{f(x) \, \middle| \, \lim_{x \to a} \frac{f(x)}{g(x)} = 0\right\}.
 $$
 
-Then, $$f(x)$$ is said to be little-o of $$g(x)$$ if $$f(x) \in o(g(x))$$.
+Then, $$f(x)$$ is said to be little-o of $$g(x)$$ if $$f(x) \in o(g(x))$$. It is customary (albeit dubious) to write $$f(x) = o(g(x))$$ instead. With that in mind, we can write the limit $$\eqref{eq:WOW!}$$ as
+
+$$
+\begin{equation}
+E(x) = o(x - t) \quad \Longrightarrow \quad f(x) = f(t) + f'(t)(x - t) + o(x - t).
+\end{equation}
+$$
+
