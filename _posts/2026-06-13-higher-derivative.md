@@ -103,4 +103,4 @@ Thus, we have arrived at another way of defining differentiability, motivated by
 > $$
 > Moreover, if this does hold, then necessarily $$a = f(t)$$ and $$b = f'(t)$$.
 
-The idea that a function is differentiable if and only if a line locally approximates the function generalizes pretty neatly into higher dimensions. 
+The idea that a function is differentiable if and only if a line locally approximates the function generalizes pretty neatly into higher dimensions, albeit with some caveats here and there.
