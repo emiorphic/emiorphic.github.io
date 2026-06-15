@@ -16,7 +16,7 @@ In high school, the introduction of what a derivative of a function is usually g
 > 
 > $$
 > \begin{equation} \label{eq:simplederiv}
-> f'(x) \coloneq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}.
+> f'(x) \coloneqq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}.
 > \end{equation}
 > $$
 > 
@@ -34,7 +34,9 @@ If we have a function $$\vb{f}:D \to \mathbb{R}^m$$ where the domain $$D \subset
 With all of that in mind, we may proceed. Given a function $$\vb{f}:D \to \mathbb{R}^m$$ where $$D \subseteq \mathbb{R}^n$$, can we extend $$\eqref{eq:simplederiv}$$?
 
 $$
+\begin{equation}
 \lim_{\vb{h} \to \vb{0}} \frac{\vb{f}(\vb{x} + \vb{h}) - \vb{f}(\vb{x})}{\vb{h}}.
+\end{equation}
 $$
 
 Even a kindergartener would realize that this is nonsensical. Barring the fact that $$\vb{f}(\vb{x}) \in \mathbb{R}^m$$ but $$\vb{h} \in \mathbb{R}^n$$ (because $$\vb{x} \in \mathbb{R}^n$$), dividing a vector with another vector is not something you can do. Thus, we need a different strategy.
@@ -42,24 +44,26 @@ Even a kindergartener would realize that this is nonsensical. Barring the fact t
 Looking back at $$\eqref{eq:simplederiv}$$, we can perform a change of variable:
 
 $$
-\begin{align*}
+\begin{align}
 f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}\\
 \Longrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}
-\end{align*}
+\end{align}
 $$
 
 If that equality holds, then the following should also hold:
 
 $$
+\begin{equation}
 \lim_{x \to t} \left(\frac{f(x) - f(t)}{x - t} - f'(t)\right) = 0
+\end{equation}
 $$
 
 Now, combine the terms over a common denominator:
 
 $$
-\begin{equation*} \label{eq:wow!}
+\begin{equation} \label{eq:wow!}
 \lim_{x \to t} \left(\frac{f(x) - [f(t) + f'(t)(x - t)]}{x - t}\right) = 0
-\end{equation*}
+\end{equation}
 $$
 
 Remember the geometric interpretation of $$f'(x)$$? Mathematically, the following equation
@@ -71,17 +75,15 @@ $$
 represents the line tangent to the curve $$y = f(x)$$ at $$x = t$$. When plotted and zoomed in, the curve and the line will look almost indistinguishable; the line *locally approximates* the curve. How well does the line locally approximates the curve? We can measure that by subtracting both curves to obtain the error, which is what the numerator in $$\eqref{eq:wow!}$$ is. Let $$E(x) = f(x) - [f(t) + f'(t)(x - t)]$$, then the limit becomes
 
 $$
+\begin{equation} \label{eq:WOW!}
 \lim_{x \to t} \frac{E(x)}{x - t} = 0
+\end{equation}
 $$
 
-Using concepts from asymptotic analysis, the limit above is equivalent to the following: 
+Before we continue, I would like to introduce a crucial tool from asymptotic analysis: little-o notation. First, define the following set:
 
 $$
-E(x) \in o(g(x))
+o(g(x)) \coloneqq \left\{f(x) \mid \lim_{x \to a} \frac{f(x)}{g(x)} = 0\right\}.
 $$
 
-where $$g(x) = x - t$$, and
-
-$$
-o(g(x)) \coloneq \left\{\right\}
-$$
+Then, $$f(x)$$ is said to be little-o of $$g(x)$$ if $$f(x) \in o(g(x))$$.
