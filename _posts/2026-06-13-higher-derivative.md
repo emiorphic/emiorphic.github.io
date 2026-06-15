@@ -29,4 +29,13 @@ Geometrically, $$f'(x)$$ represents the slope of the line tangent to the curve $
 # Can We Go Further?
 A natural question would be to ask: "what about higher dimensional functions?" Let us see what happens. First, we need to formally extend our domain $$D$$. 
 
-If we have a function $$f:D \to \mathbb{R}^m$$ where the domain $$D \subseteq \mathbb{R}^n$$, we still require $$D$$ to be an open set. In $$n$$-dimensional space, this simply means that for any point $$\vb{x} \in D$$, there is enough "wiggle room" to draw an $$n$$-dimensional open ball (an $$\varepsilon$$-neighborhood) around $$\vb{x}$$ that is entirely contained within $$D$$.
+If we have a function $$\vb{f}:D \to \mathbb{R}^m$$ where the domain $$D \subseteq \mathbb{R}^n$$, we still require $$D$$ to be an open set. In $$n$$-dimensional space, this simply means that for any point $$\vb{x} \in D$$, there is enough "wiggle room" to draw an $$n$$-dimensional open ball (an $$\varepsilon$$-neighborhood) around $$\vb{x}$$ that is entirely contained within $$D$$.
+
+With all of that in mind, we may proceed. Given a function $$\vb{f}:D \to \mathbb{R}^m$$ where $$D \subseteq \mathbb{R}^n$$, can we extend $$\eqref{eq:simplederiv}$$?
+
+$$
+\lim_{\vb{h} \to \vb{0}} \frac{\vb{f}(\vb{x} + \vb{h}) - \vb{f}(\vb{x})}{\vb{h}}.
+$$
+
+Even a kindergartener would realize that this is nonsensical. Barring the fact that $$\vb{f}(\vb{x}) \in \mathbb{R}^m$$ but $$\vb{h} \in \mathbb{R}^n$$ (because $$\vb{x} \in \mathbb{R}^n$$), dividing a vector with another vector is not something you can do. Thus, we need a different strategy.
+
