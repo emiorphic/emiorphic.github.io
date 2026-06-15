@@ -12,7 +12,7 @@ Scalar quantities (elements of $$\mathbb{R}$$) are written normally, whereas vec
 
 # Introductions
 In high school, the introduction of what a derivative of a function is usually goes like this:
-> **Definition 1** Let $$D \subseteq \mathbb{R}$$ be the domain where the function $$f$$ is defined (so $$f:D \to \mathbb{R}$$). The derivative of $$f$$ evaluated at some point $$x \in D$$, denoted by $$f'(x)$$ or $$\dv{f}{x}$$, is given by the following limit:
+> **Definition 1:** Let $$D \subseteq \mathbb{R}$$ be the domain where the function $$f$$ is defined (so $$f:D \to \mathbb{R}$$). The derivative of $$f$$ evaluated at some point $$x \in D$$, denoted by $$f'(x)$$ or $$\dv{f}{x}$$, is given by the following limit:
 > 
 > $$
 > \begin{equation} \label{eq:simplederiv}
@@ -22,7 +22,9 @@ In high school, the introduction of what a derivative of a function is usually g
 > 
 > If at a point $$x$$ the limit exists, the function is said to be *differentiable* at that point.
 
-Geometrically, $$f'(x)$$ represents the slope of the line tangent to the curve $$y = f'(x)$$ at $$x$$. 
+Geometrically, $$f'(x)$$ represents the slope of the line tangent to the curve $$y = f(x)$$ at $$x$$. 
 
 # Can We Go Further?
-A natural question would be to ask: "what about higher dimensional functions?" Let us see what happens. First, we need to extend $$D$$. 
+A natural question would be to ask: "what about higher dimensional functions?" Let us see what happens. 
+
+To generalize this, we first need to ensure that the limit can be approached from *any* direction without stepping outside our domain. Therefore, we will restrict our domain $$D \subseteq \mathbb{R}^n$$ to be an open set. This simply means that for any point $$\vb{x} \in D$$, there is enough "wiggle room" around $$\vb{x}$$ (an $$\varepsilon$$-neighborhood) that is also entirely contained within $$D$$.
