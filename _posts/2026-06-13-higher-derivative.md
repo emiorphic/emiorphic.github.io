@@ -12,7 +12,7 @@ Scalar quantities (elements of $$\mathbb{R}$$) are written normally, whereas vec
 
 # Introductions
 In high school, the introduction of what a derivative of a function is usually goes like this:
-> **Definition 1:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function (so $$f:D \to \mathbb{R}$$). The derivative of $$f$$ evaluated at some point $$x \in D$$, denoted by $$f'(x)$$ or $$\dv{f}{x}$$, is given by the following limit:
+> **Definition 1:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function $$f$$ (so $$f:D \to \mathbb{R}$$). The derivative of $$f$$ evaluated at some point $$x \in D$$, denoted by $$f'(x)$$ or $$\dv{f}{x}$$, is given by the following limit:
 > 
 > $$
 > \begin{equation} \label{eq:simplederiv}
@@ -94,11 +94,13 @@ E(x) = o(x - t) \quad \Longrightarrow \quad f(x) = f(t) + f'(t)(x - t) + o(x - t
 \end{equation}
 $$
 
-Thus, we have arrived at another way of defining differentiability. It is equivalent to Definition 1, and the proof is left as an exercise for the reader.
-> **Definition 2:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function (so $$f:D \to \mathbb{R}$$). $$f$$ is differentiable at $$x = t$$ if and only if there exists constants $$a, b$$ such that
+Thus, we have arrived at another way of defining differentiability, motivated by the result above. It is equivalent to Definition 1, and the proof is left as an exercise for the reader.
+> **Definition 2:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function $$f$$ (so $$f:D \to \mathbb{R}$$). $$f$$ is differentiable at $$x = t$$ if and only if there exists constants $$a, b$$ such that
 > $$
 > \begin{equation} \label{eq:newder}
 > f(x) = a + b(x - t) + o(x - t).
 > \end{equation}
 > $$
 > Moreover, if this does hold, then necessarily $$a = f(t)$$ and $$b = f'(t)$$.
+
+The idea that a function is differentiable if and only if a line locally approximates the function generalizes pretty neatly into higher dimensions. 
