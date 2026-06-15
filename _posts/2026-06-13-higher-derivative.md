@@ -57,8 +57,9 @@ $$
 Now, combine the terms over a common denominator:
 
 $$
-\label{eq:wow!}
+\begin{equation*} \label{eq:wow!}
 \lim_{x \to t} \left(\frac{f(x) - [f(t) + f'(t)(x - t)]}{x - t}\right) = 0
+\end{equation*}
 $$
 
 Remember the geometric interpretation of $$f'(x)$$? Mathematically, the following equation
