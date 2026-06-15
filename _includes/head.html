@@ -98,9 +98,9 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
   <script>
     MathJax = {
-        loader: {load: ['[tex]/physics']},
+        loader: {load: ['[tex]/physics', '[tex]/mathtools']},
         tex: {
-            packages: {'[+]': ['physics']},
+            packages: {'[+]': ['physics', 'mathtools']},
             tags: 'ams'
         }
     };
