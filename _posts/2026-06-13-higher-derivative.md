@@ -83,7 +83,7 @@ $$
 Before we continue, I would like to introduce a crucial tool from asymptotic analysis: little-o notation. First, define the following set:
 
 $$
-o(g(x)) \coloneqq \left\{f(x) \mid \lim_{x \to a} \frac{f(x)}{g(x)} = 0\right\}.
+o(g(x)) \coloneqq \left\{f(x) \middle| \lim_{x \to a} \frac{f(x)}{g(x)} = 0\right\}.
 $$
 
 Then, $$f(x)$$ is said to be little-o of $$g(x)$$ if $$f(x) \in o(g(x))$$.
