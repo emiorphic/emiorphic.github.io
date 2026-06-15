@@ -39,3 +39,26 @@ $$
 
 Even a kindergartener would realize that this is nonsensical. Barring the fact that $$\vb{f}(\vb{x}) \in \mathbb{R}^m$$ but $$\vb{h} \in \mathbb{R}^n$$ (because $$\vb{x} \in \mathbb{R}^n$$), dividing a vector with another vector is not something you can do. Thus, we need a different strategy.
 
+Looking back at $$\eqref{eq:simplederiv}$$, we can perform a change of variable:
+
+$$
+\begin{align*}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}\\
+&= \lim_{z \to x} \frac{f(z) - f(x)}{z - x}
+\end{align*}
+$$
+
+If that limit is equal to the constant $$f'(x)$$, then the following should hold:
+
+$$
+\lim_{z \to x} \left(\frac{f(z) - f(x)}{z - x} - f'(x)\right) = 0
+$$
+
+Now, combine the terms over a common denominator:
+
+$$
+\lim_{z \to x} \left(\frac{f(z) - [f(x) + f'(x)(z - x)]}{z - x}\right) = 0
+$$
+
+The numerator 
+
