@@ -46,7 +46,7 @@ Looking back at $$\eqref{eq:simplederiv}$$, we can perform a change of variable:
 $$
 \begin{align}
 f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}\\
-\Longrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}.
+\Longleftrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}.
 \end{align}
 $$
 
@@ -95,7 +95,7 @@ E(x) = o(x - t) \quad \Longrightarrow \quad f(x) = f(t) + f'(t)(x - t) + o(x - t
 $$
 
 Thus, we have arrived at another way of defining differentiability, motivated by the result above. It is equivalent to Definition 1, and the proof is left as an exercise for the reader.
-> **Definition 2:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function $$f$$ (so $$f:D \to \mathbb{R}$$). $$f$$ is differentiable at $$x = t$$ if and only if there exists constants $$a, b$$ such that
+> **Definition 2:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function $$f$$ (so $$f:D \to \mathbb{R}$$). $$f$$ is differentiable at $$x = t$$ if and only if there exists constants $$a$$ and $$b$$ such that
 > $$
 > \begin{equation} \label{eq:newder}
 > f(x) = a + b(x - t) + o(x - t).
