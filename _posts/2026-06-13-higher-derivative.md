@@ -44,21 +44,33 @@ Looking back at $$\eqref{eq:simplederiv}$$, we can perform a change of variable:
 $$
 \begin{align*}
 f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}\\
-&= \lim_{z \to x} \frac{f(z) - f(x)}{z - x}
+\Longrightarrow f'(t) &= \lim_{x \to t} \frac{f(x) - f(t)}{x - t}
 \end{align*}
 $$
 
-If that limit is equal to the constant $$f'(x)$$, then the following should hold:
+If that equality holds, then the following should also hold:
 
 $$
-\lim_{z \to x} \left(\frac{f(z) - f(x)}{z - x} - f'(x)\right) = 0
+\lim_{x \to t} \left(\frac{f(x) - f(t)}{x - t} - f'(t)\right) = 0
 $$
 
 Now, combine the terms over a common denominator:
 
 $$
-\lim_{z \to x} \left(\frac{f(z) - [f(x) + f'(x)(z - x)]}{z - x}\right) = 0
+\label{eq:wow!}
+\lim_{x \to t} \left(\frac{f(x) - [f(t) + f'(t)(x - t)]}{x - t}\right) = 0
 $$
 
-The numerator 
+Remember the geometric interpretation of $$f'(x)$$? Mathematically, the following equation
 
+$$
+y = f(t) + f'(t)(x - t)
+$$
+
+represents the line tangent to the curve $$y = f(x)$$ at $$x = t$$. When plotted and zoomed in, the curve and the line will look almost indistinguishable; the line *locally approximates* the curve. How well does the line locally approximates the curve? We can measure that by subtracting both curves to obtain the error, which is what the numerator in $$\eqref{eq:wow!}$$ is. Let $$E(x) = f(x) - [f(t) + f'(t)(x - t)]$$ be the error function, then the limit becomes
+
+$$
+\lim_{x \to t} \frac{E(x)}{x - t} = 0
+$$
+
+Borrowing 
