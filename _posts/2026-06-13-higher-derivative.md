@@ -22,7 +22,7 @@ In high school, the introduction of what a derivative of a function is usually g
 > 
 > If at a point $$x$$ the limit exists, the function is said to be *differentiable* at that point.
 
-(Note: In introductory calculus, the requirement for $$D$$ to be an "open set" is often glossed over. However, it is secretly essential! We need the domain to be open so that there is always a little bit of "wiggle room" around $$x$$. This ensures we can approach x from both the left and the right without accidentally stepping outside the domain where the function is undefined.)
+(Note: In introductory calculus, the requirement for $$D$$ to be an "open set" is often glossed over. However, it is secretly essential! We need the domain to be open so that there is always a little bit of "wiggle room" around $$x$$. This ensures we can approach $$x$$ from both the left and the right without accidentally stepping outside the domain where the function is undefined.)
 
 Geometrically, $$f'(x)$$ represents the slope of the line tangent to the curve $$y = f(x)$$ at $$x$$. 
 
