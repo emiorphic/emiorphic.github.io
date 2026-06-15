@@ -31,7 +31,7 @@ A natural question would be to ask: "what about higher dimensional functions?" L
 
 If we have a function $$\vb{f}:D \to \mathbb{R}^m$$ where the domain $$D \subseteq \mathbb{R}^n$$, we still require $$D$$ to be an open set. In $$n$$-dimensional space, this simply means that for any point $$\vb{x} \in D$$, there is enough "wiggle room" to draw an $$n$$-dimensional open ball (an $$\varepsilon$$-neighborhood) around $$\vb{x}$$ that is entirely contained within $$D$$.
 
-With all of that in mind, we may proceed. Given a function $$\vb{f}:D \to \mathbb{R}^m$$ where $$D \subseteq \mathbb{R}^n$$, can we extend $$\eqref{eq:simplederiv}$$?
+With all of that in mind, we may proceed. Given a function $$\vb{f}:D \to \mathbb{R}^m$$ where $$D \subseteq \mathbb{R}^n$$, can we extend $$\eqref{eq:simplederiv}$$ so that we have a definition of differentiability?
 
 $$
 \begin{equation}
@@ -86,11 +86,19 @@ $$
 o(g(x)) \coloneqq \left\{f(x) \, \middle| \, \lim_{x \to a} \frac{f(x)}{g(x)} = 0\right\}.
 $$
 
-Then, $$f(x)$$ is said to be little-o of $$g(x)$$ if $$f(x) \in o(g(x))$$. It is customary (albeit dubious) to write $$f(x) = o(g(x))$$ instead. With that in mind, we can write the limit $$\eqref{eq:WOW!}$$ as
+Then, $$f(x)$$ is said to be little-o of $$g(x)$$ as $$x \to a$$ if $$f(x) \in o(g(x))$$. It is customary (albeit dubious) to write $$f(x) = o(g(x))$$ instead. With that in mind, we can write the limit $$\eqref{eq:WOW!}$$ as
 
 $$
 \begin{equation}
-E(x) = o(x - t) \quad \Longrightarrow \quad f(x) = f(t) + f'(t)(x - t) + o(x - t).
+E(x) = o(x - t) \quad \Longrightarrow \quad f(x) = f(t) + f'(t)(x - t) + o(x - t), \quad x \to t.
 \end{equation}
 $$
 
+Thus, we have arrived at another way of defining differentiability. It is equivalent to Definition 1, and the proof is left as an exercise for the reader.
+> **Definition 2:** Let $$D \subseteq \mathbb{R}$$ be an open set defining the domain of the function (so $$f:D \to \mathbb{R}$$). $$f$$ is differentiable at $$x = t$$ if and only if there exists constants $$a, b$$ such that
+> $$
+> \begin{equation} \label{eq:newder}
+> f(x) = a + b(x - t) + o(x - t).
+> \end{equation}
+> $$
+> Moreover, if this does hold, then necessarily $$a = f(t)$$ and $$b = f'(t)$$.
