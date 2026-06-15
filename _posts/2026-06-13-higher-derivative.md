@@ -16,7 +16,7 @@ In high school, the introduction of what a derivative of a function is usually g
 > 
 > $$
 > \begin{equation} \label{eq:simplederiv}
-> f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}.
+> f'(x) \coloneq \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}.
 > \end{equation}
 > $$
 > 
@@ -68,10 +68,20 @@ $$
 y = f(t) + f'(t)(x - t)
 $$
 
-represents the line tangent to the curve $$y = f(x)$$ at $$x = t$$. When plotted and zoomed in, the curve and the line will look almost indistinguishable; the line *locally approximates* the curve. How well does the line locally approximates the curve? We can measure that by subtracting both curves to obtain the error, which is what the numerator in $$\eqref{eq:wow!}$$ is. Let $$E(x) = f(x) - [f(t) + f'(t)(x - t)]$$ be the error function, then the limit becomes
+represents the line tangent to the curve $$y = f(x)$$ at $$x = t$$. When plotted and zoomed in, the curve and the line will look almost indistinguishable; the line *locally approximates* the curve. How well does the line locally approximates the curve? We can measure that by subtracting both curves to obtain the error, which is what the numerator in $$\eqref{eq:wow!}$$ is. Let $$E(x) = f(x) - [f(t) + f'(t)(x - t)]$$, then the limit becomes
 
 $$
 \lim_{x \to t} \frac{E(x)}{x - t} = 0
 $$
 
-Borrowing 
+Using concepts from asymptotic analysis, the limit above is equivalent to the following: 
+
+$$
+E(x) \in o(g(x))
+$$
+
+where $$g(x) = x - t$$, and
+
+$$
+o(g(x)) \coloneq \left\{\right\}
+$$
