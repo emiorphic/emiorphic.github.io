@@ -103,4 +103,13 @@ Thus, we have arrived at another way of defining differentiability, motivated by
 > $$
 > Moreover, if this does hold, then necessarily $$a = f(t)$$ and $$b = f'(t)$$.
 
-The idea that a function is differentiable at a point if and only if a line locally approximates the function near said point generalizes pretty neatly into higher dimensions, albeit with some caveats here and there.
+The idea that a function is differentiable at a point if and only if a line locally approximates the function near said point generalizes pretty neatly into higher dimensions (albeit with some caveats here and there). Namely, in two dimensions, instead of a line, a *plane* locally approximates a function, and so on. Furthermore, 
+
+> **Definition 3:** Let $$D \subseteq \mathbb{R}^n$$ be an open set defining the domain of the function $$\vb{f}$$ (so $$\vb{f}:D \to \mathbb{R}^m$$). $$\vb{f}$$ is differentiable at a point $$\vb{t} \in D$$ if there exists a linear transformation $$\mathsf{T}:\mathbb{R}^n \to \mathbb{R}^m$$ such that
+> $$
+> \begin{equation} \label{eq:socool!}
+> \vb{f}(\vb{x}) = \vb{f}(\vb{t}) + \mathsf{T}(\vb{x} - \vb{t}) + o(\norm{\vb{x} - \vb{t}})
+> \end{equation}
+> $$
+> The linear transformation $$\mathsf{T}$$ is called the *total derivative* (or Fréchet derivative) of $$\vb{f}$$ at $$\vb{t}$$.
+
